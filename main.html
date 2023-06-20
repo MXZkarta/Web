@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!--  <link rel="stylesheet" href="stylebtn.css"> -->
+    <link rel="stylesheet" href="boots.css">
+  <!--   <link rel="stylesheet" href="responsible.css"> -->
+</head>
+
+<body>
+<!-- Header -->
+
+<script>
+    function showDropdown() {
+        document.getElementById('inicio-dropdown').classList.add('show');
+    }
+
+    function hideDropdown() {
+        document.getElementById('inicio-dropdown').classList.remove('show');
+    }
+
+    function toggleTheme() {
+        document.body.classList.toggle('dark-theme');
+    }
+</script>
+
+
+
+<header>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <h1><img src="Image/ca.png" alt="Logo" class="logo"></h1>
+            </div>
+            <div class="col">
+                <nav class="navbar navbar-expand">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <button id="theme-toggle" onclick="toggleTheme()">
+                                🌞
+                            </button>
+                        </li>
+                        <li class="nav-item dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                            <a class="nav-link" href="main.html">Inicio</a>
+                            <div id="inicio-dropdown" class="dropdown-menu dark-theme">
+                                <a class="dropdown-item" href="/blog/Categorias/BusinessCentral.html" >Business Central</a>
+                                <a class="dropdown-item" href="/blog/Categorias/Crypto.html">Cryptocositas</a>
+                                <a class="dropdown-item" href="/blog/Categorias/Blog.html">Blog</a>
+                                <a class="dropdown-item" href="/blog/Categorias/Tecnologia.html">Tecnología</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre mí</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+  
+<!-- Main -->
+<main>
+    <section class="fondo-seccion text-center">
+        <div class="ContainerHDR">
+            <div class="rowheader">
+                <div class="col">
+                    <p class="text-uppercase">CONSULTORÍA PARA TODOS.</p>
+                    <p class="text-uppercase">BLOG PERSONAL DE CARLOS ARTEAGA SOBRE SUS COSAS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+<section class="main-section">
+    <!-- contenido de la sección -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Aquí se agregarían los posts del blog y las categorías -->
+                <article class="forecast">
+                    <div class="content-block">
+                        <a href="blog/blog/ventas.html"><img class="content-image ml-2" src="/Image/update.jpg"
+                                alt="MDN"></a>
+                        <div class="content-text">
+                            <h2 class="content-title">5 razones por las cuales deberías actualizar de Dynamics GP a
+                                Business Central</h2>
+                            <p class="content-description text-justify">Actualizar a Business Central es importante
+                                porque ofrece una
+                                solución de gestión empresarial más moderna y actualizada que Dynamics GP. Esto permite
+                                una mayor eficiencia en la gestión de finanzas, compras, ventas, inventario y
+                                producción,
+                                así como una mejor integración con otras aplicaciones de Microsoft. Además, proporciona
+                                mayor seguridad y accesibilidad, lo que permite a los usuarios trabajar desde cualquier
+                                lugar y en cualquier momento.</p>
+                            <h1 class="content-date">05 March 2018</h1>
+                            <a class="content-link" id="in" href="blog/blog/ventas.html">Seguir
+                                leyendo.</a>
+                        </div>
+                    </div>
+                    <div class="content-block">
+                        <a href="blog/blog/btc.html"><img class="content-image ml-2" src="/Image/BTC23.jpg"
+                                alt="MDN"></a>
+                        <div class="content-text">
+                            <h2 class="content-title">El Minado limpio de bitcoin</h2>
+                            <p class="content-description text-justify">El Salvador no solo está considerando la
+                                aceptación de
+                                criptomonedas para que sus ciudadanos las usen como medio de pago, sino que también ha
+                                decidido involucrarse en el proceso de minería de Bitcoin mediante el uso de fuentes de
+                                energía renovable.</p>
+                            <h1 class="content-date">June 17, 2021</h1>
+                            <a class="content-link" id="in" href="blog/blog/btc.html">Seguir
+                                leyendo.</a>
+                        </div>
+                    </div>
+                    <div class="content-block">
+                        <a href="blog/blog/vr.html"><img class="content-image ml-2" src="/Image/VR.jpg" alt="MDN"></a>
+                        <div class="content-text">
+                            <h2 class="content-title">La realidad virtual tendrá todos tus datos.</h2>
+                            <p class="content-description text-justify">La realidad virtual ha sufrido varias
+                                trasformaciones a lo
+                                largo del tiempo, pero ¿es realmente un concepto de actualidad? En 1833 Sir Charles
+                                Wheatstone inventa el estereoscopio. Un instrumento que permite crear una ilusión de
+                                profundidad en una imagen a partir de dos fotografías prácticamente idénticas.</p>
+                            <h1 class="content-date">May 19, 2021</h1>
+                            <a class="content-link" id="in" href="/blog/blog/vr.html">Seguir
+                                leyendo.</a>
+                        </div>
+                    </div>
+                    <div class="content-block">
+                        <a href="blog/blog/crm.html"><img class="content-image ml-2" src="/Image/ventas.jpg"
+                                alt="MDN"></a>
+                        <div class="content-text">
+                            <h2 class="content-title">¿Por qué mi empresa debería de tener un CRM?</h2>
+                            <p class="content-description text-justify">Si quieres desarrollar tus oportunidades,
+                                cumplir con los
+                                objetivos comerciales que te propones y lograr retener a tus clientes déjame decirte que
+                                necesitas un CRM, ya que...</p>
+                            <h1 class="content-date">May 29, 2021</h1>
+                            <a class="content-link" id="in" href="blog/blog/crm.html">Seguir
+                                leyendo.</a>
+                        </div>
+                    </div>
+                    <div class="content-block">
+                        <a href="blog/blog/cliente.html"><img class="content-image ml-2" src="/Image/cliente.jpg"
+                                alt="MDN"></a>
+                        <div class="content-text">
+                            <h2 class="content-title">La importancia de la anticipación en la satisfacción del
+                                cliente</h2>
+                            <p class="content-description text-justify">La tecnología permite la automatización de
+                                tareas cotidianas,
+                                pero surge la pregunta de si estamos perdiendo nuestra conexión con ellas. La
+                                anticipación
+                                de las necesidades del cliente es clave para ofrecer un mejor servicio, y se utilizan
+                                sistemas avanzados para garantizar la disponibilidad de consumibles. Es importante
+                                mantenerse a la vanguardia y utilizar tecnologías avanzadas de manera responsable para
+                                mejorar nuestras vidas</p>
+                            <h1 class="content-date">June 17, 2021</h1>
+                            <a class="content-link" id="in" href="blog/blog/cliente.html">Seguir
+                                leyendo.</a>
+                        </div>
+                    </div>
+                    <div class="content-block">
+                        <a href="blog/blog/mineria.html"><img class="content-image ml-2" src="/Image/temas/mineria.jpg"
+                                alt="MDN"></a>
+                        <div class="content-text">
+                            <h2 class="content-title">Descubriendo los Tesoros del Cosmos.</h2>
+                            <p class="content-description text-justify">¡Descubre un futuro prometedor en la minería espacial! Avances tecnológicos 
+                                revolucionarios abrirán las puertas a recursos valiosos en asteroides y lunas. 
+                                Empresas privadas lideran el camino hacia la exploración y explotación espacial. 
+                                Beneficios económicos y desarrollo sostenible esperan en esta nueva frontera. 
+                                Prepárate para despegar hacia un emocionante viaje cósmico que cambiará nuestro destino.</p>
+                            <h1 class="content-date">June 01, 2023</h1>
+                            <a class="content-link" id="in" href="blog/blog/mineria.html">Seguir
+                                leyendo.</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</main>
+
+        <footer>
+            <div class="nav-footer">
+                <a href="http://www.linkedin.com/in/carlos-daniel-arteaga-19077880" target="_blank">
+                    <a id="in" href="http://www.linkedin.com/in/carlos-daniel-arteaga-19077880" target="_blank"> 2023 All rights reserved. – Designed and implemented by CARLOS ARTEAGA</a>
+                </a>
+            </div>
+            <div class="nav-footer">
+                <a id="in" href="http://www.linkedin.com/in/carlos-daniel-arteaga-19077880" target="_blank">linkedin</a>
+                <a href="https://www.instagram.com/zkart/" target="_blank">Instagram</a>
+            </div>
+        </footer>
+
+        <script>
+            function toggleTheme() {
+                var body = document.body;
+                var header = document.querySelector('header');
+                var main = document.querySelector('main');
+                var footer = document.querySelector('footer');
+                var themeToggle = document.getElementById('theme-toggle');
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    header.classList.remove('dark-theme');
+                    main.classList.remove('dark-theme');
+                    footer.classList.remove('dark-theme');
+                    themeToggle.textContent = '🌞'; // Icono de sol
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    body.classList.add('dark-theme');
+                    header.classList.add('dark-theme');
+                    main.classList.add('dark-theme');
+                    footer.classList.add('dark-theme');
+                    themeToggle.textContent = '🌚'; // Icono de luna
+                    localStorage.setItem('theme', 'dark');
+                }
+            }
+
+            // Aquí se comprueba la preferencia de tema cuando la página se carga
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const currentTheme = localStorage.getItem('theme');
+                if (currentTheme === 'dark') {
+                    document.body.classList.add('dark-theme');
+                    document.querySelector('header').classList.add('dark-theme');
+                    document.querySelector('main').classList.add('dark-theme');
+                    document.querySelector('footer').classList.add('dark-theme');
+                    document.getElementById('theme-toggle').textContent = '🌚';
+                }
+            });
+
+            // Seleccionar todos los botones
+            const buttons = document.querySelectorAll('.btn');
+
+            // Función que cambia el color del botón cuando el ratón pasa sobre él
+            function handleMouseOver(event) {
+                event.target.style.backgroundColor = '#3dd3f5'; // color de fondo
+                event.target.style.color = '#ecf0f1'; // color del texto
+            }
+
+            // Función que revierte los cambios cuando el ratón se va del botón
+            function handleMouseOut(event) {
+                event.target.style.backgroundColor = '#1c6f8d'; // color de fondo original
+                event.target.style.color = '#ffffff'; // color del texto original
+            }
+
+            // Agregar los event listeners a cada botón
+            buttons.forEach(function (button) {
+                button.addEventListener('mouseover', handleMouseOver);
+                button.addEventListener('mouseout', handleMouseOut);
+            });
+        </script>
+    </body>
+
+    </html>

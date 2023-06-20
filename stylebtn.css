@@ -1,0 +1,58 @@
+/* Estilos generales */
+.nav-item-segundacolumna .sausage-button:first-of-type {
+  margin-top: 80%; /* ajusta este valor a tus necesidades */
+}
+
+.nav-item-segundacolumna {
+  margin-top: 50%; /* ajusta este valor a tus necesidades */
+}
+
+.sausage-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #3498db;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Añadido un margen inferior para empujar los elementos debajo */
+}
+
+.sausage-button .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  color: #3498db;
+}
+
+/* Estilos para pantallas de 600px o menos */
+@media screen and (max-width: 600px) {
+  .nav-item-segundacolumna .sausage-button:first-of-type {
+    margin-top: 0;
+  }
+
+  .nav-item-segundacolumna {
+    margin-top: 0;
+  }
+
+
+  
+}
+
+/* Estilos para pantallas de 601px a 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Agrega aquí los estilos específicos para pantallas de 601px a 1024px */
+}
+
+/* Estilos para pantallas de 1025px en adelante */
+@media screen and (min-width: 1025px) {
+  /* Agrega aquí los estilos específicos para pantallas de 1025px en adelante */
+}

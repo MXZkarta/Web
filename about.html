@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi información</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="boots.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    
+    <script>
+        function showDropdown() {
+            document.getElementById('inicio-dropdown').classList.add('show');
+        }
+
+        function hideDropdown() {
+            document.getElementById('inicio-dropdown').classList.remove('show');
+        }
+    </script>
+
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            /* Cambia el color de fondo según tus preferencias */
+            overflow-x: hidden;
+            /* Oculta la barra de desplazamiento horizontal */
+        }
+
+        html,
+        body,
+        .containerdev {
+            height: 50%;
+            /* Asegura que el contenedor ocupe todo el espacio vertical */
+            margin: 0;
+            /* Elimina los márgenes predeterminados */
+            padding: 0;
+            /* Elimina los rellenos predeterminados */
+        }
+
+        .containerdev {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Centra vertical y horizontalmente el contenido */
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            /* Agrega una sombra suave */
+        }
+
+        .card-header {
+            background-color: #f8f9fa;
+            /* Cambia el color de fondo del encabezado según tus preferencias */
+            border-bottom: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .card-body {
+            background-color: #ffffff;
+            /* Cambia el color de fondo del cuerpo según tus preferencias */
+        }
+
+        .card-title {
+            font-size: 24px;
+            /* Ajusta el tamaño de fuente del título según tus preferencias */
+            margin-bottom: 10px;
+            /* Ajusta el margen inferior del título según tus preferencias */
+        }
+
+        .card-text {
+            font-size: 16px;
+            /* Ajusta el tamaño de fuente del texto según tus preferencias */
+            line-height: 1.5;
+            /* Ajusta la altura de línea del texto según tus preferencias */
+        }
+
+        .btn-circle {
+            margin-top: 75px;
+            width: 45px;
+            height: 45px;
+            font-size: 24px;
+            border-radius: 50%;
+        }
+    </style>
+
+    <script>
+        function toggleTheme() {
+            var body = document.body;
+            var header = document.querySelector('header');
+            var main = document.querySelector('main');
+            var footer = document.querySelector('footer');
+            var themeToggle = document.getElementById('theme-toggle');
+            if (body.classList.contains('dark-theme')) {
+                body.classList.remove('dark-theme');
+                header.classList.remove('dark-theme');
+                main.classList.remove('dark-theme');
+                footer.classList.remove('dark-theme');
+                themeToggle.textContent = '🌞'; // Icono de sol
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.classList.add('dark-theme');
+                header.classList.add('dark-theme');
+                main.classList.add('dark-theme');
+                footer.classList.add('dark-theme');
+                themeToggle.textContent = '🌚'; // Icono de luna
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Aquí se comprueba la preferencia de tema cuando la página se carga
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const currentTheme = localStorage.getItem('theme');
+            if (currentTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                document.querySelector('header').classList.add('dark-theme');
+                document.querySelector('main').classList.add('dark-theme');
+                document.querySelector('footer').classList.add('dark-theme');
+                document.getElementById('theme-toggle').textContent = '🌚';
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h1><img src="Image/ca.png" alt="Logo" class="logo"></h1>
+                </div>
+                <div class="col">
+                    <nav class="navbar navbar-expand">
+                        <ul class="navbar-navabout ml-auto">
+                            <li class="nav-item">
+                                <button id="theme-toggle" onclick="toggleTheme()">
+                                    🌞
+                                </button>
+                            </li>
+                            <li class="nav-item dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                                <a class="nav-link" href="main.html">Inicio</a>
+                                <div id="inicio-dropdown" class="dropdown-menu dark-theme">
+                                    <a class="dropdown-item" href="/blog/Categorias/BusinessCentral.html">Business Central</a>
+                                    <a class="dropdown-item" href="/blog/Categorias/Crypto.html">Cryptocositas</a>
+                                    <a class="dropdown-item" href="/blog/Categorias/Blog.html">Blog</a>
+                                    <a class="dropdown-item" href="/blog/Categorias/Tecnologia.html">Tecnología</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Sobre mí</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<style>
+    main {
+        margin-top: 130px; /* Ajusta el valor según el espacio deseado */
+    }
+</style>
+    <main>
+        <div class="containerdev">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">It Carlos</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <strong>Nombre:</strong> Carlos Arteaga
+                            </p>
+                            <p class="card-text">
+                                <strong>Edad:</strong> 35 años
+                            </p>
+                            <p class="card-text">
+                                <strong>Profesión:</strong> Consultor en IT.
+                            </p>
+                            <div class="card-text">
+                                <p><strong>¡Hola! Soy Carlos Daniel, un apasionado del mundo de la tecnología y la consultoría.</strong></p>
+                                <p>Cuento con experiencia en sistemas de administración empresarial como ERP, CRM y Gestión presupuestal Reqlogic. Me enorgullece haber adquirido conocimientos sólidos en estas áreas.</p>
+                                <p>Además, tengo un gran interés en el fascinante mundo del blockchain y las criptomonedas. Actualmente, me mantengo actualizado en Business Central y me capacito en Platzi, explorando temas relacionados con la tecnología, incluyendo blockchain y criptomonedas. Me emociona estar al tanto de las últimas tendencias y avances en estos campos.</p>
+                                <p>En mi tiempo libre, aprovecho mis habilidades como freelance para trabajar en la implementación de sitios web, gestión de dominios y brindar capacitación en informática. Disfruto compartiendo mis conocimientos y ayudando a otros en estas áreas.</p>
+                                <p>Si deseas conocer más sobre mí o necesitas alguna información adicional, no dudes en enviarme un mensaje. Estaré encantado de entablar una interesante conversación contigo.</p>
+                                <p>¡Te invito a visitar mi sitio web, <a href="http://www.Itcarlos.com">www.Itcarlos.com</a>, donde encontrarás contenido relevante y valioso! Espero que disfrutes explorando los temas que abordo.</p>
+                                <p>¡Sigue adelante con tu pasión por la tecnología y la consultoría! Estoy seguro de que lograrás grandes cosas.</p>
+                              </div>
+                        </div>                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="containerbtn"> <!-- Se agregó la clase mt-2 al contenedor -->
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <a href="http://www.linkedin.com/in/carlos-daniel-arteaga-19077880" target="_blank" class="btn btn-primary btn-circle me-2">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="btn btn-primary btn-circle">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

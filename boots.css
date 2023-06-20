@@ -1,0 +1,281 @@
+/* El * selecciona todos los elementos del HTML. A estos elementos se les va a eliminar cualquier margen y padding que pudieran tener por defecto y se va a definir su box-sizing como border-box, lo cual hace que el padding y el borde de los elementos no aumente su ancho total. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Clase para dar estilo al logo de la página. Se establece su altura y ancho y márgenes alrededor para su ubicación en la página. */
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+
+header {
+    background-color: #f8f9fa;
+    padding: 25px;
+    margin-bottom: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-left: none;
+    margin-right: 20px;
+}
+
+.ContainerHDR {
+    margin-bottom: 10px;
+    background-image: url("/Image/espaciov1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-block {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    align-items: start;
+    margin-bottom: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+/* Estilos para las imágenes del contenido. */
+.content-image {
+    grid-column: 1 / 2;
+    width: 100%;
+    height: auto;
+    margin-top: 28px;
+    margin-right: 5px;
+}
+
+/* Clase para dar formato al texto del contenido. */
+.content-text {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+/* Estilos para el título del contenido. */
+.content-title{
+    max-width: 92%;
+    margin-bottom: 10px;
+    transition: color 0.5s ease;
+}
+
+.content-title:hover {
+    color: #F50087;
+}
+
+/* Estilos para la descripción del contenido. */
+.content-description{
+    max-width: 92%;
+    margin-bottom: 10px;
+
+}
+
+/* Estilos para la fecha y enlace del contenido. */
+.content-date, .content-link {
+    margin-bottom: 10px;
+}
+
+.content-date:hover {
+    color: #F50087;
+}
+
+.content-link:hover {
+    color: #bed6f1;  /* Cambia esto al color que prefieras */
+  }
+
+
+
+#theme-toggle {
+    margin-top: 9px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+    color: #db35b7;
+}
+
+/* Estilos para las imágenes del contenido. */
+.content-image {
+    
+    width: 100%;
+    height: auto;
+    margin-top: 28px;
+    margin-right: 40px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilos de navegación */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    
+}
+
+.navbar-navabout .nav-link {
+    color: #000000;
+    /* Cambia el color de texto predeterminado cuando el tema no es "black-theme" */
+}
+
+/* Estilos de navegación */
+.navabout {
+    background-color: #1e2022;
+    padding: 10px;
+    
+}
+
+.navabout li a {
+    color: #1e2022;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navbar li {
+    margin-right: 10px;
+}
+
+.navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Estilos de contenido principal */
+main {
+    padding: 0px;
+    margin-top: 120px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f8f9fa;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.content-block a:hover .content-image {
+    /* filter: sepia(100%); */
+    /*  filter: opacity(25%); */
+     transition: filter 0.5s ease;
+     filter: sepia(50%); 
+ }
+
+
+/* Estilos de pie de página */
+footer {
+    background-color: #f8f9fa;
+    padding: 5px;
+    text-align: center;
+    margin-top: 1px;
+}
+
+/* Estilos de tema oscuro */
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme header {
+    background-color: #1c1c1c;
+}
+
+.dark-theme .containerdev {
+    background-color: #333;
+}
+
+.dark-theme .card-body{
+    background-color: #333;
+}
+
+.dark-theme .card-header{
+    background-color: #b81995;
+    color: #fff;
+}
+
+.dark-theme footer {
+    background-color: #333;
+}
+
+.dark-theme .navabout {
+    background-color: #333;
+}
+
+.dark-theme .navabout li a {
+    color: #007bff;
+}
+
+.dark-theme .navbar {
+    background-color: #1c1c1c;
+}
+
+.dark-theme .navbar li a {
+    color: #007bff;
+}
+
+.dark-theme .btn {
+    background-color: #007bff;
+}
+
+.dark-theme .btn:hover {
+    background-color: #0056b3;
+}
+
+.dark-theme p {
+    color: #fff;
+}
